@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+/* basic set up*/
+/* variable*/
+:root{
+--primary-color:#FF5A00;
+--page1:#212121;
+--page2:#2A2A2A;
+}
+/* header stART */
+
+
+.logo{
+    font-size: 35px;
+    color: #fff;
+
+}
+.container{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    
+}
+nav{
+    background: whitesmoke;
+    border-radius: 16px;
+    /*
+    box-shadow: 0 25px 25px -20px white;*/
+    width: 60%;
+   
+}
+nav ul li{
+    align-items: flex-end;
+    list-style: none;
+    display: inline-block;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size:15px ;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: #888;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: animate 0.5s;
+}
+nav ul li::after{
+    content: " ";
+    background: #2D9596;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    position: absolute;
+    top: 56px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition:top 0.5s,opacity 0.5s ;
+}
+nav ul li:hover{
+    color: #fff;
+}
+nav ul li:hover::after{
+    color: #fff;
+    top: 50%;
+    opacity: 1;
+
+}
+
+.banner-title-and-others{
+    padding-left: 100px;
+}
+header{
+    height: 808px;
+    color: BLACK;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    background-color:var(--page1);
+  
+}
+.banner{
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+.banner h1{
+    font-size: 40px;
+    font-weight: bold;
+    color:#fff;
+
+}
+.banner h2{
+    font-size: 50px;
+    color: navy;
+
+}
+.banner h1 span{
+    font-size: 40px;
+    color: #FF5A00;
+
+}
+.banner h3{
+    color:#1FA0FF;
+    font-size: 20px;
+}
+.banner h6{
+    color:#fff;
+    font-size: 20px;
+    font-weight: inherit;
+}
+.banner p{
+    font-size: 18px; 
+    width: 500px;
+    color: #fff;
+    margin: 40px 0;
+}
+.btn-primary{
+    background: lightsalmon;
+    color: navy;
+    border: none;
+    padding: 4px 12px;
+    outline: none;
+    font-size: 16px;
+    font-style: italic;
+    border-radius: 16px;
+   
+}
+.btn-primary:hover{
+background-color: #FF5A00;
+
+}
+.side{
+    display: flex;
+    align-items: center;
+    color: #1FA0FF;
+    
+}
+.paragraph{
+    text-align: left;
+    color:yellowgreen;
+    justify-content: last baseline;
+    position:relative;
+    padding-left:160px ;
+    padding-top: 328px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+.paragraph h1 span{
+    color:whitesmoke;
+    font-size: 40px;
+    font-style: italic;
+}
+
+/*About section starting*/
+
+
+.about{
+    background-color: var(--page2);
+    height: 800px;
+    width: 100%;
+    background-size: cover;
+}
+.containner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+
+}
+span{
+    color: var(--primary-color);
+}
+section{
+    padding: 100px 100px;
+}
+.title{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+img{
+    width: 25vw;
+}
+
+.about-profile{
+    height: 450px;
+    width: 200px;
+   position:relative;
+   padding-right: 150px;
+   flex: content;
+}
+.about-content p{
+    line-height: 37px;
+    color: #fff;
+    width: 800px;
+    }
+    /* starting my services*/
+    .service-row{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 30px;
+        margin-top: 40px;
+    }
+    .single-service{
+        background-color: var(--page2);
+        color: #fff;
+        padding: 20px 30px;
+        border-radius: 16px;
+    }
+    .single-service i{
+        font-size: 30px;
+        margin-bottom: 20px;
+
+    }
+    .single-service h3{
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-weight: 400;
+        color: var(--primary-color);
+    }
+    .single-service p{
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .btn-secondary{
+        background-color: var(--page2);
+        border: none;
+        padding: 5px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    .single-portfolio{
+        cursor: pointer;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 35px;
+        margin-top:30px;
+        color: #fff;
+        padding: 30px 20px;
+        border-radius: 16px;
+        width: 35vw;
+        height: 45vh;
+    }
+    hr,h3{
+        color: var(--primary-color);
+        padding-left: 100px;
+    }
+    
